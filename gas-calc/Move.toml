@@ -1,0 +1,17 @@
+[package]
+name = "gas-calc"
+version = "1.0.0"
+authors = []
+
+[addresses]
+self = "0x1"
+
+# [dependencies.AptosFramework]
+# git = "https://github.com/aptos-labs/aptos-core.git"
+# rev = "mainnet"
+# subdir = "aptos-move/framework/aptos-framework"
+[dependencies]
+AptosStdlib = { git = "https://github.com/aptos-labs/aptos-core", rev = "6c48e2d56573282ae9835829a774e691f5c1c663", subdir = "aptos-move/framework/aptos-stdlib" }
+MoveStdlib = { git = "https://github.com/aptos-labs/aptos-core", rev = "6c48e2d56573282ae9835829a774e691f5c1c663", subdir = "aptos-move/framework/move-stdlib" }
+AptosFramework = { git = "https://github.com/aptos-labs/aptos-core", rev = "6c48e2d56573282ae9835829a774e691f5c1c663", subdir = "aptos-move/framework/aptos-framework" }
+
